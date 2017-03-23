@@ -1,24 +1,10 @@
-# README
+The main focus of the project is to use carrierwave and mini_magick gem in rails to create a image uploading system and generate its thumbnail.
+To show the actual image, comment out   <%= image_tag @hotel.image.thumb.url %>  in show.html.erb and uncomment the line above it.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Also the size of the thumbnail can be modified as per your wish in app/uploaders/image_uploader.rb .
 
-Things you may want to cover:
+Gems used
 
-* Ruby version
+gem 'carrierwave', '~> 1.0'
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+gem 'mini_magick', '~> 4.3'
